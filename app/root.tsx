@@ -6,7 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-
+import React from "react";
 import type { Route } from "./+types/root";
 import "./app.css";
 
@@ -24,8 +24,9 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const [theme, setTheme] = React.useState("light");
   return (
-    <html lang="en">
+    <html className={theme} lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -33,6 +34,27 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <div className="shadow-md border-b-blue-400">
+          <nav className="flex flex-wrap py-5 px-5 justify-start-safe font-bold bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+            <div className="p-3 rounded-2xl shrink-0 hover:bg-gray-800 hover:text-white dark:hover:bg-gray-100 dark:hover:text-black">
+              <a href="/">Home</a>
+            </div>
+            <span className="py-3 px-1 font-normal text-gray-300 dark:text-gray-600">
+              |
+            </span>
+            <div className="p-3 rounded-2xl shrink-0 hover:bg-gray-800 hover:text-white dark:hover:bg-gray-100 dark:hover:text-black">
+              <a href="/profile">Profile</a>
+            </div>
+            <span className="py-3 px-1 font-normal text-gray-300 dark:text-gray-600">
+              |
+            </span>
+            <div className="p-3 rounded-2xl shrink-0 hover:bg-gray-800 hover:text-white dark:hover:bg-gray-100 dark:hover:text-black">
+              <a href="https://expense-tracker-henna-three-39.vercel.app/">
+                Side Project
+              </a>
+            </div>
+          </nav>
+        </div>
         {children}
         <ScrollRestoration />
         <Scripts />
