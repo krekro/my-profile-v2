@@ -10,7 +10,7 @@ import {
 
 export default function Profile() {
   return (
-    <div className="mt-5 p-3 grid grid-cols-3 gap-4">
+    <div className="mt-5 py-10 px-40 grid grid-cols-3 gap-4">
       <Card className="col-span-2 bg-gray-50 dark:bg-gray-900 hover:shadow-lg transition-shadow duration-300">
         <CardHeader>
           <CardTitle className="text-2xl flex items-center gap-4">
