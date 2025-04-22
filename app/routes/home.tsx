@@ -21,8 +21,9 @@ export default function Home() {
   );
   return (
     <>
-      <div className="mt-5 p-3 flex flex-wrap">
-        <div className="font-bold text-8xl text-gray-700">
+      <div className="mt-5 py-3 flex w-full justify-start-safe">
+        <div className="absolute inset-y-30 inset-x-10 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-10 rounded-2xl blur-2xl"></div>
+        <div className="font-bold text-8xl text-gray-700 relative ">
           <h1 className="p-8">Hi,</h1>
           <h1 className="p-8">
             I am <span className="text-blue-400">Tennyson</span>
@@ -31,6 +32,11 @@ export default function Home() {
             I am a <span className="font-nerdy">Web Developer</span>
           </h1>
         </div>
+        <img
+          src="app/asset/home.jpg"
+          alt="Tennyson Wong"
+          className="justify-end hue-rotate-15 rounded-2xl w-1/2 h-90% mask-r-from-50% mask-l-from-10% mask-t-from-80% mask-b-from-90% shadow-lg transform transition-transform duration-500 hover:scale-105 hover:rotate-1"
+        />
       </div>
       <div className="mt-10 p-3 flex flex-wrap justify-center">
         <Popover>
@@ -39,7 +45,7 @@ export default function Home() {
               Contact me
             </Button>
           </PopoverTrigger>
-          <PopoverContent className="flex flex-wrap justify-center">
+          <PopoverContent className="flex flex-wrap justify-center drop-shadow-xl/25">
             <div className="flex flex-col items-center">
               <h2 className="text-lg font-semibold">Contact Me</h2>
               <p className="shrink-0 text-sm text-gray-600 dark:text-gray-400">
