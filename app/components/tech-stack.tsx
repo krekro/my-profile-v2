@@ -133,7 +133,7 @@ export default function TechStack() {
       : techItems.filter((item) => item.category === activeTab);
 
   return (
-    <Card className="w-full max-w-4xl mx-auto bg-white dark:bg-gray-950 shadow-sm">
+    <Card className="w-full max-w-4xl mx-auto text-gray-700 dark:text-white bg-white dark:bg-gray-950 shadow-sm">
       <CardHeader className="pb-4">
         <CardTitle className="text-2xl font-bold tracking-tight">
           My Tech Stack
@@ -147,7 +147,7 @@ export default function TechStack() {
         className="w-full"
       >
         <div className="px-6">
-          <TabsList className="grid grid-cols-2 md:grid-cols-7 gap-1">
+          <TabsList className="grid grid-cols-3 md:grid-cols-7 gap-1">
             {categories.map((category) => (
               <TabsTrigger
                 key={category.id}

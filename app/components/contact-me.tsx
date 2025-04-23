@@ -7,7 +7,7 @@ export default function ContactMe() {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button className="p-5 rounded-2xl text-xl bg-blue-400 text-white hover:bg-gray-900">
+        <Button className="z-10 p-5 rounded-2xl text-xl bg-blue-400 text-white hover:bg-gray-900">
           Contact me
         </Button>
       </PopoverTrigger>
