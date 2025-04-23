@@ -13,7 +13,7 @@ export default function ContactMe() {
       </PopoverTrigger>
       <PopoverContent className="flex flex-wrap justify-center drop-shadow-xl/25">
         <div className="flex flex-col items-center">
-          <h2 className="text-lg font-semibold">Here we go!</h2>
+          <h2 className="text-lg font-semibold">Here you go!</h2>
           <p className="shrink-0 text-sm text-gray-600 dark:text-gray-400">
             Feel free to reach out to me via the following social media.
           </p>
