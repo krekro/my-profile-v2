@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 
 export default function PageIcon() {
   return (
-    <NavLink to="/">
+    <NavLink to="/" className="hidden md:block">
       <div className="absolute left-10 top-5 flex flex-row items-center gap-2">
         <img
           src="https://i.ibb.co/QFNNTvDR/icon.png"
