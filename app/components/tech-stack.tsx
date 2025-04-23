@@ -20,7 +20,6 @@ import {
   Server,
   Cpu,
   Wrench,
-  Workflow,
   Layers,
   GitBranch,
 } from "lucide-react";
