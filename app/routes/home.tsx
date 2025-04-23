@@ -3,7 +3,7 @@ import ContactMe from "../components/my-socials";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "My Profile" },
+    { title: "Tennyweb" },
     { name: "description", content: "Tennyson Wong's Profile" },
   ];
 }
