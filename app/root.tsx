@@ -9,6 +9,7 @@ import {
 import React from "react";
 import type { Route } from "./+types/root";
 import "./app.css";
+import PageIcon from "./components/page-icon";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -35,7 +36,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <div className="shadow-md border-b-blue-400">
-          <nav className="flex flex-wrap py-5 px-5 justify-start-safe font-bold bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+          <PageIcon />
+          <nav className="flex flex-wrap py-5 px-5 justify-end-safe font-bold bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
             <div className="p-3 rounded-2xl shrink-0 hover:bg-gray-800 hover:text-white dark:hover:bg-gray-100 dark:hover:text-black">
               <a href="/">Home</a>
             </div>
