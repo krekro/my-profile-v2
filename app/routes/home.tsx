@@ -1,7 +1,6 @@
-import type { Route } from "./+types/home";
 import ContactMe from "../components/my-socials";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [
     { title: "Tennyweb" },
     { name: "description", content: "Tennyson Wong's Profile" },

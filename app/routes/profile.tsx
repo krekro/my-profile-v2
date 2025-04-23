@@ -1,11 +1,10 @@
 import React from "react";
-import type { Route } from "./+types/home";
 import ProfileCard from "../components/profile-card";
 import EducationCard from "../components/education-card";
 import TechStackCard from "../components/techstack-card";
 import TechStack from "../components/tech-stack";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [
     { title: "Tennyweb" },
     { name: "description", content: "Tennyson Wong's Profile" },
