@@ -10,7 +10,7 @@ export default function EducationCard() {
   return (
     <Card className="bg-gray-50 dark:bg-gray-900 hover:shadow-lg transition-shadow duration-300">
       <CardHeader>
-        <CardTitle className="text-2xl items-center gap-4">
+        <CardTitle className="text-2xl flex flex-row items-center gap-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -36,7 +36,7 @@ export default function EducationCard() {
           as an engineer
         </CardDescription>
       </CardHeader>
-      <CardContent className="font-light text-gray-700 dark:text-gray-300">
+      <CardContent className="font-light text-gray-700 dark:text-gray-300 flex flex-col gap-2">
         <div className="mb-4">
           <h3 className="text-lg font-semibold">
             Bachelor of Electronic Engineering
@@ -44,8 +44,10 @@ export default function EducationCard() {
           <p className="text-sm text-gray-600 dark:text-gray-400">
             University of Exeter | Graduated: Sep 2021
           </p>
-          <p>Specialized in embedded systems and signal processing.</p>
-          <p>Completed projects in robotic arms.</p>
+          <ul className="mt-4 list-disc list-inside flex flex-col gap-1">
+            <li>Specialized in embedded systems and signal processing.</li>
+            <li>Completed projects in robotic arms.</li>
+          </ul>
         </div>
       </CardContent>
     </Card>

@@ -11,7 +11,7 @@ export default function ProfileCard() {
   return (
     <Card className=" bg-gray-50 dark:bg-gray-900 hover:shadow-lg transition-shadow duration-300">
       <CardHeader>
-        <CardTitle className="text-2xl items-center gap-4">
+        <CardTitle className="text-2xl items-center flex flex-row gap-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -42,8 +42,8 @@ export default function ProfileCard() {
           as an IT Professional
         </CardDescription>
       </CardHeader>
-      <CardContent className="font-light text-gray-700 dark:text-gray-300">
-        <div className="mb-4">
+      <CardContent className="flex flex-col gap-2 font-light text-gray-700 dark:text-gray-300">
+        <div>
           <h3 className="text-lg font-semibold">Software Engineer</h3>
           <p className="text-sm text-gray-600 dark:text-gray-400">
             ABC Tech Solutions | Jan 2020 - Present
@@ -54,7 +54,7 @@ export default function ProfileCard() {
             deliver high-quality software solutions.
           </p>
         </div>
-        <div className="mt-8">
+        <div>
           <h3 className="text-lg font-semibold">IT Support Specialist</h3>
           <p className="text-sm text-gray-600 dark:text-gray-400">
             XYZ Corp | Jun 2017 - Dec 2019
