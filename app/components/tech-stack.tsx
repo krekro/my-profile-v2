@@ -133,21 +133,16 @@ export default function TechStack() {
       : techItems.filter((item) => item.category === activeTab);
 
   return (
-    <Card className="w-full max-w-4xl mx-auto text-gray-700 dark:text-white bg-white dark:bg-gray-950 shadow-sm">
+    <Card className="w-full max-w-4xl mx-auto text-gray-700 dark:text-white bg-gray-50 dark:bg-gray-950 hover:shadow-lg transition-shadow ">
       <CardHeader className="pb-4">
         <CardTitle className="text-2xl font-bold tracking-tight">
           My Tech Stack
         </CardTitle>
         <CardDescription>Technologies and tools I work with</CardDescription>
       </CardHeader>
-      <Tabs
-        defaultValue="all"
-        value={activeTab}
-        onValueChange={setActiveTab}
-        className="w-full"
-      >
+      <Tabs defaultValue="all" onValueChange={setActiveTab} className="w-full">
         <div className="px-6">
-          <TabsList className="grid grid-cols-3 md:grid-cols-7 gap-1">
+          <TabsList className="bg-gray-200 grid grid-cols-3 md:grid-cols-7 gap-1">
             {categories.map((category) => (
               <TabsTrigger
                 key={category.id}
@@ -165,10 +160,10 @@ export default function TechStack() {
               {filteredTech.map((tech, index) => (
                 <div
                   key={index}
-                  className="flex flex-col p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors"
+                  className="flex flex-col p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors shadow-sm"
                 >
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="p-2 rounded-md bg-gray-100 dark:bg-gray-800">
+                    <div className="p-2 rounded-md bg-gray-200 dark:bg-gray-800">
                       {tech.icon}
                     </div>
                     <h3 className="font-medium">{tech.name}</h3>

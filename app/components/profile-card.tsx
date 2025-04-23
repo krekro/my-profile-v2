@@ -6,41 +6,19 @@ import {
   CardDescription,
   CardContent,
 } from "./ui/card";
+import { Building } from "lucide-react";
 
 export default function ProfileCard() {
   return (
     <Card className=" bg-gray-50 dark:bg-gray-900 hover:shadow-lg transition-shadow duration-300">
       <CardHeader>
         <CardTitle className="text-2xl items-center flex flex-row gap-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            className="lucide lucide-building-icon lucide-building"
-          >
-            <rect width="16" height="20" x="4" y="2" rx="2" ry="2" />
-            <path d="M9 22v-4h6v4" />
-            <path d="M8 6h.01" />
-            <path d="M16 6h.01" />
-            <path d="M12 6h.01" />
-            <path d="M12 10h.01" />
-            <path d="M12 14h.01" />
-            <path d="M16 10h.01" />
-            <path d="M16 14h.01" />
-            <path d="M8 10h.01" />
-            <path d="M8 14h.01" />
-          </svg>
-          <span className="text-blue-900">Work Experience</span>
+          <div className="z-10 p-2 rounded-md bg-gray-200 dark:bg-gray-800">
+            <Building className="h-5 w-5" />
+          </div>
+          <span className="text-gray-700">Work Experience</span>
         </CardTitle>
-        <CardDescription className="text-blue-300">
-          as an IT Professional
-        </CardDescription>
+        <CardDescription>as an IT Professional</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-2 font-light text-gray-700 dark:text-gray-300">
         <div>

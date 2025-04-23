@@ -30,11 +30,9 @@ export default function EducationCard() {
             <path d="M6 5v17" />
             <circle cx="12" cy="9" r="2" />
           </svg>
-          <span className="text-blue-900">Education</span>
+          <span className="text-gray-700">Education</span>
         </CardTitle>
-        <CardDescription className="text-blue-300">
-          as an engineer
-        </CardDescription>
+        <CardDescription>as an engineer</CardDescription>
       </CardHeader>
       <CardContent className="font-light text-gray-700 dark:text-gray-300 flex flex-col gap-2">
         <div className="mb-4">

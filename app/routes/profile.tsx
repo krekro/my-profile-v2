@@ -2,6 +2,7 @@ import React from "react";
 import ProfileCard from "../components/profile-card";
 import EducationCard from "../components/education-card";
 import TechStackCard from "../components/techstack-card";
+import TechStack from "../components/tech-stack";
 
 export default function Profile() {
   return (
@@ -13,7 +14,7 @@ export default function Profile() {
         <EducationCard />
       </div>
       <div className="w-full lg:col-span-5">
-        <TechStackCard />
+        <TechStack />
       </div>
     </div>
   );
