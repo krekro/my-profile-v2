@@ -44,7 +44,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <span className="py-3 px-1 font-normal text-gray-300 dark:text-gray-600">
               |
             </span>
-            <div className="p-3 rounded-2xl shrink-0 hover:bg-gray-800 hover:text-white dark:hover:bg-gray-100 dark:hover:text-black">
+            <div className="p-3 rounded-2xl shrink-0 hover:bg-gray-800 hover:text-white active:bg-gray-800 active:text-white dark:hover:bg-gray-100 dark:hover:text-black">
               <a href="/profile">About Me</a>
             </div>
             <span className="py-3 px-1 font-normal text-gray-300 dark:text-gray-600">
