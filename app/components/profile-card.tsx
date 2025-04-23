@@ -21,26 +21,36 @@ export default function ProfileCard() {
         <CardDescription>as an IT Professional</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-2 font-light text-gray-700 dark:text-gray-300">
-        <div>
-          <h3 className="text-lg font-semibold">Software Engineer</h3>
+        <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
+          <h3 className="text-lg font-semibold">
+            Application Support Engineer
+          </h3>
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            ABC Tech Solutions | Jan 2020 - Present
+            AXA Hong Kong | Jun 2022 - Present
+          </p>
+          <p className="mt-4">Experienced in </p>
+          <p>- Solution Delivery/ Technical Coordination </p>
+          <p>- Application Support </p>
+          <p>- Resolve Major System Outage</p>
+          <p className="mt-4">
+            Provided support, troubleshooting and resolved bugs/ issues for
+            backend components of a business workflow system. Ensured system
+            uptime and optimized IT BAU operations processes by automating
+            standard operating procedures.
           </p>
           <p>
-            Developed and maintained web applications using modern frameworks
-            and technologies. Collaborated with cross-functional teams to
-            deliver high-quality software solutions.
+            Participated in solution delivery of a new SMS templating
+            Application for Life and EB business
           </p>
         </div>
-        <div>
-          <h3 className="text-lg font-semibold">IT Support Specialist</h3>
+        <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
+          <h3 className="text-lg font-semibold">Trainee</h3>
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            XYZ Corp | Jun 2017 - Dec 2019
+            ITCS Group | Jan 2022 - Jun 2022
           </p>
-          <p>
-            Provided technical support and troubleshooting for hardware and
-            software issues. Ensured system uptime and optimized IT
-            infrastructure for better performance.
+          <p className="mt-4">
+            Learned the basics of cloud computing and IT operations in a
+            corporate environment.
           </p>
         </div>
       </CardContent>

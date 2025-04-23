@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import ContactMe from "../components/contact-me";
+import ContactMe from "../components/my-socials";
 
 export function meta({}: Route.MetaArgs) {
   return [

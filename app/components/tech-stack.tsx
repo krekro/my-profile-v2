@@ -67,7 +67,7 @@ export default function TechStack() {
       category: "languages",
     },
     {
-      name: "python",
+      name: "Python",
       description: "High-level programming language",
       icon: <Code2 className="h-5 w-5" />,
       category: "languages",
@@ -172,7 +172,10 @@ export default function TechStack() {
                     {tech.description}
                   </p>
                   <div className="mt-auto pt-3">
-                    <Badge variant="outline" className="text-xs capitalize">
+                    <Badge
+                      variant="outline"
+                      className="bg-gray-900 text-white text-xs capitalize"
+                    >
                       {tech.category}
                     </Badge>
                   </div>
