@@ -41,9 +41,9 @@
     }
   },
   "reactRouterConfig": {
-    "appDirectory": "/Users/tennysonwong/Side Project/my-profile/my-profile/app",
+    "appDirectory": "/Users/tennysonwong/My Files/Side Project/my-profile/my-profile/app",
     "basename": "/",
-    "buildDirectory": "/Users/tennysonwong/Side Project/my-profile/my-profile/build",
+    "buildDirectory": "/Users/tennysonwong/My Files/Side Project/my-profile/my-profile/build",
     "future": {
       "unstable_middleware": false,
       "unstable_optimizeDeps": false,
